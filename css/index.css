@@ -1,52 +1,53 @@
 body {
-    background-color: rgb(185, 244, 224);
-    color:rgb(18, 2, 36);
-    line-height: 1.6;
-    font-family: 'Tanzania';
-    font-size: 1em;
+  background-color: rgb(146, 222, 232);
+  color: rgb(18, 2, 36);
+  line-height: 1.6;
+  font-family: "Tanzania";
+  font-size: 1em;
 }
 section {
-    margin:2% 15%;
-    background-color: rgb(19, 162, 67);
-    padding-left: 30%;
-    border-radius: 20px;
+  margin: 2% 10%;
+  background-color: rgb(19, 162, 67);
+  padding: 1em;
+  border-radius: 20px;
 }
 h2 {
-    font-size: 1.3em;
-    color:rgb(242, 238, 238);
-    font-weight: bold;
+  font-size: 1.3em;
+  color: rgb(242, 238, 238);
+  font-weight: bold;
+  text-align: center;
 }
 h1 {
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-color:rgb(119, 24, 128); 
-margin-left: 400px;
-margin-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(119, 24, 128);
+  margin-left: 400px;
+  margin-bottom: 10px;
 }
 img {
-    width:15%;
-    border-radius: 20px;
-    box-shadow: 0.5em 0.5em 0.5em rgb(146, 160, 203);
-    margin-left: 450px;
+  width: 15%;
+  border-radius: 20px;
+  box-shadow: 0.5em 0.5em 0.5em rgb(146, 160, 203);
+  margin-left: 450px;
 }
-.works li{
-    background-color: rgb(164, 196, 222);
-    width: 600px;
-    padding: 10px;
-    margin: 10px;
-    display: block;
-    border-radius: 10px;
+.works li {
+  background-color: rgb(164, 196, 222);
+  width: 600px;
+  padding: 10px;
+  margin: 10px;
+  display: block;
+  border-radius: 10px;
 }
 .years {
-    float: right;
+  float: right;
 }
 a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
 p {
-    background-color: rgb(164, 196, 222);
-    width: 1000px;
-    padding: 10px;
-    margin: 50px;
-    display: block;
-    border-radius: 10px;
+  background-color: rgb(164, 196, 222);
+  width: 80%;
+  padding: 10px;
+  margin: 50px;
+  display: block;
+  border-radius: 10px;
 }
