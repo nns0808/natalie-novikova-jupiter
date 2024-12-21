@@ -2,7 +2,7 @@ body {
   background-color: rgb(146, 222, 232);
   color: rgb(18, 2, 36);
   line-height: 1.6;
-  font-family: "Tanzania";
+  /* font-family: "Playwrite TZ Guides"; */
   font-size: 1em;
 }
 section {
@@ -20,14 +20,18 @@ h2 {
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(119, 24, 128);
-  margin-left: 400px;
+  /* margin-left: 400px; */
+  text-align: center;
   margin-bottom: 10px;
 }
 img {
   width: 15%;
   border-radius: 20px;
   box-shadow: 0.5em 0.5em 0.5em rgb(146, 160, 203);
-  margin-left: 450px;
+}
+#front_image {
+  margin: auto;
+  text-align: center;
 }
 .works li {
   background-color: rgb(164, 196, 222);
@@ -50,6 +54,7 @@ p {
   margin: 50px;
   display: block;
   border-radius: 10px;
+  font-family: "Playwrite TZ Guides";
 }
 #nav {
   display: flex;
