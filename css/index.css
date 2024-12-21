@@ -51,3 +51,10 @@ p {
   display: block;
   border-radius: 10px;
 }
+#nav {
+  display: flex;
+  flex-direction: row;
+  gap: 3.5em;
+  list-style-type: none;
+  position: sticky;
+}
