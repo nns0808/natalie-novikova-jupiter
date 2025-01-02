@@ -21,7 +21,7 @@ h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(119, 24, 128);
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 }
 img {
   width: 15%;
@@ -49,10 +49,10 @@ a:link {
 p {
   background-color: rgb(164, 196, 222);
   width: 80%;
-  padding: 10px;
-  margin: 50px;
+  padding: 1em;
+  margin: auto; 
   display: block;
-  border-radius: 10px;
+  border-radius: 1em;
  }
 #navbar {
   font-size: 1.5em;
@@ -81,9 +81,9 @@ a.navbarList {
 }
 .exp-item {
   background-color: bisque;
-  border-radius: o.8em;
+  border-radius: 0.8em;
   padding: 0.5em;
-  width: 28em;
+  width: 100em;
 }
 .one-exp-heading {
   margin-left: 1em;
@@ -99,8 +99,10 @@ a.navbarList {
   justify-content: space-between; 
   align-items: center; 
 }
-#connect {
+#connect-links {
   display: flex;
+  justify-content: center;
+  padding-left: 0;
 }
 
 li {
