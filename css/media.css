@@ -32,8 +32,7 @@
       color: rgb(102, 0, 204); 
     }
     #front_image img {
-      width: 40%;
-      border-radius: 10px;
+     border-radius: 10px;
     }
     .exp-item {
       width: 40em;
@@ -118,6 +117,9 @@
   
     a {
       font-size: 0.8em; 
+    }
+    .skillsBox {
+      display:block; 
     }
   }
   
