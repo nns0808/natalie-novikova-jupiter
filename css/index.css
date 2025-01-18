@@ -26,6 +26,7 @@ h1 {
 }
 img {
   width: 15%;
+  height: 20%;
   border-radius: 20px;
   box-shadow: 0.5em 0.5em 0.5em rgb(146, 160, 203);
 }
@@ -123,5 +124,33 @@ a.navbarList {
   gap: 1em;
   padding-left: 0;
 }
+.social {
+text-align: center;
+font-family: Playwrite Australia SA;
+}
+.skillsBox li {
+  background-color: rgb(164, 196, 222);
+  width: 20%;
+  max-width: 600px;
+  padding: 10px 40px;
+  border-radius: 10px;
+  justify-content: center;
+  margin-left: 0.25rem;
+  margin: 15px auto; /* Centers the boxes within each column */
+}
 
+.skillsBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto 0px;
+  justify-items: center; /* Horizontally centers items in each grid cell */
+  align-items: center;  /* Vertically centers items in each grid cell */
+}
 
+#skills {
+  text-align: center;
+  }
+footer {
+  text-align: center;
+  font-family: Playwrite Australia SA;
+}
