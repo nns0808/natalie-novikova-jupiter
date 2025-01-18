@@ -124,7 +124,7 @@ a.navbarList {
   gap: 1em;
   padding-left: 0;
 }
-#footer {
+.social {
 text-align: center;
 font-family: Playwrite Australia SA;
 }
@@ -149,4 +149,8 @@ font-family: Playwrite Australia SA;
 
 #skills {
   text-align: center;
+  }
+footer {
+  text-align: center;
+  font-family: Playwrite Australia SA;
 }

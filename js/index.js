@@ -1,6 +1,11 @@
+// create a footer and add it to the body
+const footer = document.createElement('footer');
+const body = document.querySelector('body');
+body.appendChild(footer);
+
+// add a copyright to the footer
 const today = new Date();
 const thisYear = today.getFullYear();
-const footer = document.querySelector('#footer');
 const copyright = document.createElement('p');
 copyright.innerHTML = `Natalia Novikova &copy; ${thisYear}`;
 footer.appendChild(copyright);
