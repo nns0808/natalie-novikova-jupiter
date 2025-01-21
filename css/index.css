@@ -154,3 +154,13 @@ footer {
   text-align: center;
   font-family: Playwrite Australia SA;
 }
+#messagesForm form {
+  margin-left: 2%;
+  display: block;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: rgb(255, 228, 196);
+}
+#messages button {
+  margin-left: 80%;
+  }
