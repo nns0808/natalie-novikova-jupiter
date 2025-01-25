@@ -32,6 +32,9 @@ for (let i = 0; i < skills.length; i++) {
 // create message form
 const messageForm = document.querySelector("form");
 messageForm.addEventListener("submit", handleSubmit);
+const messageSection = document.getElementById("messages");
+const messageList = messageSection.querySelector("ul");
+
 
 function handleSubmit(e) {
   e.preventDefault();
@@ -44,13 +47,11 @@ function handleSubmit(e) {
   console.log("message: ", message);
 
 // display messages in list
-const messageSection = document.getElementById("messages");
-const messageList = messageSection.querySelector("ul");
-const newMessage = document.createElement("li");
-newMessage.innerHTML = `<a href = "mailto:${email}"> ${name} </a> <span>wrote: ${message}<span>`;
+  const newMessage = document.createElement("li");
+  newMessage.innerHTML = `<a href = "mailto:${email}"> ${name} </a> <span>wrote: ${message}</span>`;
 
 // create remove button
-let removeButton = document.createElement("button");
+  let removeButton = document.createElement("button");
   removeButton.innerText = "remove";
   removeButton.type = "button";
   removeButton.className = "remove-button";
@@ -62,14 +63,14 @@ let removeButton = document.createElement("button");
     }
   });
 // create edit button
-let editButton = document.createElement("button");
+  let editButton = document.createElement("button");
   editButton.innerText = "edit";
   editButton.type = "button";
   editButton.className = "edit-button";
   editButton.addEventListener("click", () => {
     let update = prompt('Edit Message');
-   let updatedMessage = newMessage.querySelector('span');
-   updatedMessage.textContent = `wrote: ${update}`;
+    let updatedMessage = newMessage.querySelector('span');
+    updatedMessage.textContent = `wrote: ${update}`;
   });  
   newMessage.appendChild(removeButton);
   newMessage.appendChild(editButton);

@@ -39,9 +39,9 @@
       padding: 1.5em;
       }
   
-    ul {
+    /* ul {
      border: 4px solid rgb(102, 153, 255);
-    }
+    } */
     #navbar {
       font-size: 1.5em; 
       gap: 3em; 
