@@ -29,20 +29,7 @@ for (let i = 0; i < skills.length; i++) {
   skill.innerHTML = skills[i];
   skillsList.appendChild(skill);
 }
-
-// create remove button
-const removeButton = document.createElement("button");
-removeButton.innerText = "remove";
-removeButton.type = "button";
-removeButton.addEventListener("click", (e) => {
-  const entry = removeButton.parentNode;
-  entry.remove();
-  if (messageList.childElementCount === 0) {
-    messageSelection.style.display = "none";
-  }
-});
-
-// add message form submit
+// create message form
 const messageForm = document.querySelector("form");
 messageForm.addEventListener("submit", handleSubmit);
 
@@ -56,12 +43,37 @@ function handleSubmit(e) {
   console.log("Email: ", email);
   console.log("message: ", message);
 
-  // display messages in list
-  const messageSection = document.getElementById("messages");
-  const messageList = messageSection.querySelector("ul");
-  const newMessage = document.createElement("li");
-  newMessage.innerHTML = `<a href = "mailto:${email}"> ${name} </a> <span>wrote: ${message}<span>`;
+// display messages in list
+const messageSection = document.getElementById("messages");
+const messageList = messageSection.querySelector("ul");
+const newMessage = document.createElement("li");
+newMessage.innerHTML = `<a href = "mailto:${email}"> ${name} </a> <span>wrote: ${message}<span>`;
+
+// create remove button
+let removeButton = document.createElement("button");
+  removeButton.innerText = "remove";
+  removeButton.type = "button";
+  removeButton.className = "remove-button";
+  removeButton.addEventListener("click", () => {
+    let entry = removeButton.parentNode;
+    entry.remove();
+    if (messageList.childElementCount === 0) {
+      messageSection.hidden = true;
+    }
+  });
+// create edit button
+let editButton = document.createElement("button");
+  editButton.innerText = "edit";
+  editButton.type = "button";
+  editButton.className = "edit-button";
+  editButton.addEventListener("click", () => {
+    let update = prompt('Edit Message');
+   let updatedMessage = newMessage.querySelector('span');
+   updatedMessage.textContent = `wrote: ${update}`;
+  });  
   newMessage.appendChild(removeButton);
+  newMessage.appendChild(editButton);
   messageList.appendChild(newMessage);
+  messageForm.reset();
 }
 
