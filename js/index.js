@@ -60,6 +60,7 @@ function handleSubmit(e) {
     entry.remove();
     if (messageList.childElementCount === 0) {
       messageSection.hidden = true;
+      messageSection.style.display = "none";
     }
   });
 // create edit button
@@ -75,6 +76,7 @@ function handleSubmit(e) {
   newMessage.appendChild(removeButton);
   newMessage.appendChild(editButton);
   messageList.appendChild(newMessage);
+  messageSection.style.display = "block";
   messageForm.reset();
 }
 

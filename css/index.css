@@ -164,4 +164,8 @@ footer {
 #messages button {
   margin-left: 80%;
   }
+
+#messages {
+ display: none;
+}
  
