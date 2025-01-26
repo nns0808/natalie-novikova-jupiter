@@ -165,7 +165,6 @@ footer {
   margin-left: 80%;
   }
 
-#messages {
- display: none;
+section[hidden] {
+  display: none;
 }
- 
