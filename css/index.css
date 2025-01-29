@@ -168,3 +168,22 @@ footer {
 section[hidden] {
   display: none;
 }
+#projects ul {
+  background-color: rgb(255, 228, 196);
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 100vw;
+  border-radius: 20px;
+}
+#projects li {
+  background-color: rgb(164, 196, 222);
+  width: 20%;
+  max-width: 600px;
+  padding: 10px 40px;
+  border-radius: 10px;
+  justify-content: center;
+  margin-left: 0.25rem;
+  margin: 15px auto; 
+}
