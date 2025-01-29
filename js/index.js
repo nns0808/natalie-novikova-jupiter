@@ -93,8 +93,14 @@ fetch("https://api.github.com/users/nns0808/repos")
   })
   .then((repositories) => {
     console.log("repositories: ", repositories);
-  })
-  .catch((error) => {
-    console.error("Fetch error:", error);
+    for (let i = 0; i < repositories.length; i++){
+      const project = document.createElement("li");
+      project.innerText = repositories[i].html_url;
+      projectList.appendChild(project); 
+  }
+})
+
+
+.catch((error) => {
+  console.error("Fetch error:", error);
   });
-  
