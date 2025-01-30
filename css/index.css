@@ -181,9 +181,11 @@ section[hidden] {
   background-color: rgb(164, 196, 222);
   width: 20%;
   max-width: 600px;
-  padding: 10px 40px;
+  padding: 10px 20px; 
   border-radius: 10px;
-  justify-content: center;
-  margin-left: 0.25rem;
-  margin: 15px auto; 
+  text-align: center; 
+  margin: 15px auto;
+  overflow-wrap: break-word; 
+  word-wrap: break-word; 
+  white-space: normal;
 }
