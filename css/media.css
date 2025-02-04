@@ -24,6 +24,11 @@
       padding: 1em;
     }     
   }
+  #projectList ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; 
+  }
   
   /*Devices Larger than Tablet Size (1024px and above) */
   @media (min-width: 1025px) {

@@ -17,6 +17,7 @@ h2 {
   color: rgb(242, 238, 238);
   font-weight: bold;
   text-align: center;
+  
 }
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -167,4 +168,41 @@ footer {
 
 section[hidden] {
   display: none;
+}
+#projectList ul {
+  background-color: rgb(255, 228, 196);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 100vw;
+  border-radius: 20px;
+  padding-top: 0;
+}
+#projectList li {
+  background-color: rgb(164, 196, 222);
+  width: 20%;
+  max-width: 600px;
+  padding: 10px 20px; 
+  border-radius: 10px;
+  text-align: center; 
+  margin: 15px auto;
+  overflow-wrap: break-word; 
+  word-wrap: break-word; 
+  white-space: normal;
+        
+  }
+  
+.remove-button {
+  font-family: VerPlaywrite Australia SA, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(238, 31, 31);
+  background-color: rgb(164, 196, 222);
+}
+.edit-button {
+  font-family: VerPlaywrite Australia SA, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(238, 31, 31);
+  background-color: rgb(164, 196, 222);
 }
