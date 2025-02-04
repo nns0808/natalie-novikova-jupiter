@@ -82,7 +82,7 @@ function handleSubmit(e) {
 
 // DOM selectors
 const projectSection = document.getElementById("projects");
-const projectList = projectSection.querySelector("ul");
+// const projectList = projectSection.querySelector("ul");
 
 fetch("https://api.github.com/users/nns0808/repos")
   .then((response) => {
@@ -95,11 +95,10 @@ fetch("https://api.github.com/users/nns0808/repos")
     console.log("repositories: ", repositories);
     for (let i = 0; i < repositories.length; i++){
       const project = document.createElement("li");
-      project.innerText = repositories[i].html_url;
+      project.innerHTML = `<a href="${repositories[i].html_url}" target="_blank">${repositories[i].name}</a>`;
       projectList.appendChild(project); 
   }
 })
-
 
 .catch((error) => {
   console.error("Fetch error:", error);
