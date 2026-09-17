@@ -17,9 +17,16 @@ const skills = [
   "CSS",
   "GITHUB",
   "Excel",
+  "React",
+  "Node.js",
+  "Python", 
+  "Scikit-learn",
+  "Pandas", 
+  "NumPy", 
+  "Machine Learning", 
+  "Data Visualization",
   "MATLAB",
   "SPSS",
-  "Python Anaconda",
   "SQL",
 ];
 const skillsSection = document.getElementById("skills");
